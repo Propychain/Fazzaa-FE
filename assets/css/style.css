@@ -1273,7 +1273,7 @@ img {
 
 .stroke {
   color: transparent;
-  -webkit-text-stroke: 1px #1d1d1d;
+  -webkit-text-stroke: 1px #429ce6;
 }
 
 .dark-text .stroke,
