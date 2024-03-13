@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "fazzaa-main1",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
