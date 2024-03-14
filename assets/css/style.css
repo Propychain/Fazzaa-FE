@@ -5334,11 +5334,21 @@ body.loaded {
   position: relative;
 }
 
-.call-action-img .sec-lg-head:after {
+:dir(ltr) .call-action-img .sec-lg-head:after {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
+  width: 400%;
+  height: 100%;
+  background: #fff;
+}
+
+:dir(rtl).call-action-img .sec-lg-head:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 400%;
   height: 100%;
   background: #fff;
@@ -7715,13 +7725,24 @@ header.in-box {
   position: relative;
 }
 
-.header-digital .half-img-right {
+:dir(ltr) .header-digital .half-img-right {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-position: right bottom;
+  background-size: 50%;
+  pointer-events: none;
+}
+
+:dir(rtl) .header-digital .half-img-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: left bottom;
   background-size: 50%;
   pointer-events: none;
 }
