@@ -17,4 +17,4 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_UTG1_36E56 }}"
           projectId: utg1-36e56
-          deploy: "live"
+          channelId: "live"
