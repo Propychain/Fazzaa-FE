@@ -1622,6 +1622,10 @@ img.left {
   width: 120px;
 }
 
+.icon-img-200 {
+  width: 300px;
+}
+
 /*-------------------------------------------------------
            Z-index
 -------------------------------------------------------*/
@@ -7266,7 +7270,7 @@ body.inter-center {
 
 .serv-box .serv-item {
   padding: 60px 40px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.355);
 }
 
 .serv-box .serv-item .arrow svg {
@@ -7275,7 +7279,9 @@ body.inter-center {
 }
 
 .serv-box .lg-pad {
-  padding: 60px;
+  padding: 30px;
+  max-height: 350px;
+  height: 350px;
 }
 
 .serv-box .crv-more a {
@@ -8029,8 +8035,10 @@ header.in-box {
 
 .team-box .item {
   position: relative;
-  padding: 15px;
+  padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #429ce6;
+
 }
 
 .team-box .item .info {
@@ -8500,7 +8508,7 @@ header.in-box {
 }
 
 .testim-crv2 .bord-qoute {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid #429ce6;
 }
 
 .testim-crv2 .bord-qoute .qoute-icon {
@@ -8604,7 +8612,8 @@ header.in-box {
 .swiper-controls.arrow-out .swiper-button-prev:hover .right,
 .swiper-controls.arrow-out .swiper-button-next:hover .left,
 .swiper-controls.arrow-out .swiper-button-next:hover .right {
-  background: rgba(0, 0, 0, 0.05);
+  background: #429ce6;
+  color: white;
 }
 
 .swiper-controls.arrow-out .left,
@@ -8613,7 +8622,7 @@ header.in-box {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid #429ce6;
   border-radius: 50%;
   color: #1d1d1d;
 }
@@ -9644,10 +9653,10 @@ header.in-box {
     padding-left: 0;
   }
   .sideimg-numbers .bg-left {
-    position: static;
+    /* position: static; */
     width: 100%;
     height: 400px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .serv-box {
     padding-top: 90px;
