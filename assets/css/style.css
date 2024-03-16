@@ -9262,7 +9262,67 @@ header.in-box {
   -ms-user-select: none;
   user-select: none;
 }
+.card-container{
+  padding: 0 50px;
+  min-height: 47vh;
+}
 
+@media (max-width:1500px){
+  .numbers-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    font-weight: 400;
+    font-size: medium;
+    padding: auto auto;
+    margin: 0 auto;
+  }
+  .numbers-section div{
+  margin: auto auto;
+  }
+}
+
+@media (max-width: 1100px){
+  .numbers-section{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  
+    font-weight: 400;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 370px){
+  .numbers-section{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  
+    font-weight: 20px;
+    font-size: small;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 991px){
+  .card-container{
+   display: grid;
+   gap:10px;
+   height: 80vh;
+   grid-template-columns: repeat(2, 1fr);
+   width: auto;
+   /* height: 100%; */
+  }
+}
+
+@media (min-width: 200px) and (max-width: 740px){
+  .card-container{
+   display: grid;
+   gap:10px;
+   height: 180vh;
+   width: auto;
+   margin: 0 50px;
+   /* grid-template-columns: repeat(2, 1fr); */
+   /* height: 100%; */
+  }
+}
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
   .shop-cart {
     /* Force table to not be like tables anymore */
@@ -10071,7 +10131,7 @@ header.in-box {
     display: block !important;
   }
   .serv-box .serv-item .icon-img-80 {
-    width: 60px;
+    width: 40px;
     margin-bottom: 30px;
   }
   .serv-box .serv-item .ml-60 {
