@@ -373,7 +373,11 @@ img {
   margin-top: 30;
   margin-right: 165px;
 }
-
+@media screen and (max-width:1450px) {
+  .butn.butn-md{
+    padding: 10px 10px;  
+  }
+}
 @media only screen and (max-width:650px) {
   .butn.butn-md{
     margin-left: 10px;
@@ -9321,6 +9325,11 @@ header.in-box {
 .card-container{
   padding: 0 50px;
   min-height: 47vh;
+  /* height: 550vh; */
+}
+
+.join-butn{
+
 }
 
 @media (max-width:1500px){
@@ -9413,7 +9422,7 @@ header.in-box {
   .card-container{
    display: grid;
    gap:10px;
-   height: 80vh;
+   height: 84vh;
    grid-template-columns: repeat(2, 1fr);
    width: auto;
    /* height: 100%; */
