@@ -398,6 +398,7 @@ img {
 @media only screen and (max-width:450px) {
   .butn.butn-md{
     font-size: 17px !important;
+    margin-top: 50px;
   }
 }
 
@@ -6962,7 +6963,10 @@ footer .bg-pattern {
 .showcase-full .swiper-button-prev:after {
   display: none;
 }
-
+.swiper-button-prev, .swiper-button-next {
+  transform: scaleX(-1);
+  padding-inline-end: 50px;
+}
 .parallax-show .inner {
   min-height: 100vh;
 }
@@ -9331,7 +9335,17 @@ header.in-box {
 .join-butn{
 
 }
+#slide1:checked ~ #carousel .item:nth-child(1),
+#slide2:checked ~ #carousel .item:nth-child(2),
+#slide3:checked ~ #carousel .item:nth-child(3) {
+    /* Styles to show the item */
+}
 
+@media screen and (max-width:991px) {
+  .extra-img{
+margin-top: 40px;
+  }
+}
 @media (max-width:1500px){
   .numbers-section{
     display: grid;
@@ -9453,10 +9467,6 @@ header.in-box {
   }
 }
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  .shop-cart {
-    /* Force table to not be like tables anymore */
-    /* Hide table headers (but not display: none;, for accessibility) */
-  }
   .shop-cart table {
     width: 100%;
   }
