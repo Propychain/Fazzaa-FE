@@ -370,8 +370,8 @@ img {
 }
 .hero-butn{
   font-size: 28px;
-  margin-top: 30;
-  margin-right: 165px;
+  margin-top: 50px;
+  margin-right: 110px;
 }
 @media screen and (max-width:1450px) {
   .butn.butn-md{
