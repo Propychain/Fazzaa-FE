@@ -35,7 +35,7 @@
 </head>
 
 <body class="home-digital main-bg">
-
+    <script src="slider.js"></script>
 
 
     <!-- ==================== Start Loading ==================== -->
@@ -149,7 +149,7 @@
                         </select> -->
                         <div class="w3-dropdown-hover w3-hover-orang e" style="width: 120px;">
                             <button class="w3-button  fz-5">
-                                <img class="fz-10" style="width: 20px;" src="assets/imgs/serv-icons/language-svgrepo-com.png"> AR <i class="fa fa-caret-down"></i></button>
+                                <img class="fz-10" style="width: 20px;" src="assets/imgs/serv-icons/language-svgrepo-com.png">عربي<i class="fa fa-caret-down"></i></button>
                             <div class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
                                 <button class="w3-bar-item w3-button" onclick="switchLanguage('en')">EN</button>
                             </div>
@@ -176,9 +176,9 @@
                                 </h5>
                             </div>
                     </div>
-                    <div class="" style="display: flex; justify-content: center; margin-right: 25px;">
-                        <a href="https://www.jotform.com/app/240752196604457"
-                                    class="butn butn-md butn-bg main-colorbg2 radius-30 mt-30 fz-30" style="display: flex; justify-content: center; margin-left: 250px;">
+                    <div style="display: flex; margin-left: 25px;">
+                        <a href="https://form.jotform.com/240711154175045"
+                                    class="butn butn-md butn-bg main-colorbg2 radius-30 mt-30 fz-30 hero-butn">
                                     <span>! انضم الينا الان واصنع تغيير</span>
                         </a>
                     </div>
@@ -263,15 +263,14 @@
                                     <span class="up-text fz-30">increase your conversion rate.</span>
                                 </span> -->
                             </h3>
-                           
                         </div>
-                        <!-- <div class="col-lg-6 d-flex align-items-center">
+                        <div class="col-lg-6 d-flex align-items-center">
                             <div class="full-width">
                                 <div class="d-flex justify-content-end justify-end">
                                     <div class="swiper-controls arrow-out d-flex">
-                                        <div class="swiper-button-prev" tabindex="0" role="button"
-                                            aria-label="Previous slide">
-                                            <span class="right">
+                                        <div for="slide2" class="swiper-button-next ml-20" tabindex="0" role="button"
+                                            aria-label="Next slide" onclick="moveSlide(1)">
+                                            <span class="left">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -280,9 +279,9 @@
                                                 </svg>
                                             </span>
                                         </div>
-                                        <div class="swiper-button-next ml-50" tabindex="0" role="button"
-                                            aria-label="Next slide">
-                                            <span class="left">
+                                        <div for="slide1" class="swiper-button-prev" tabindex="0" role="button"
+                                            aria-label="Previous slide" onclick="moveSlide(-1)">
+                                            <span class="right">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -294,13 +293,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
 
                 <div class="container">
                     <div class="row md-marg">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" id="slide1">
                             <div class="item md-mb50">
                                 <div class="img">
                                     <img src="assets/imgs/Ahmad (1).jpg" alt="">
@@ -321,7 +320,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" id="slide2">
                             <div class="item md-mb50">
                                 <div class="img">
                                     <img src="assets/imgs/Sanad.jpg" alt="">
@@ -342,7 +341,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" id="slide3">
                             <div class="item">
                                 <div class="img">
                                     <img src="assets/imgs/Qader (1).jpg" alt="">
@@ -363,10 +362,29 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-4 extra-img" id="slide4">
+                            <div class="item">
+                                <div class="img">
+                                    <img src="assets/imgs/nadine.jpeg" alt="">
+                                    <div class="hover-message">فزعة هو أكثر من مبادرة؛ إنه رؤية للمستقبل. كمؤسسين، تصورنا منصة يمكن من خلالها للمجتمع العربي أن يتجمع للابتكار والدعم والإلهام.</div>
+                                </div>
+                                <div class="info d-flex align-items-center">
+                                    <div>
+                                        <div class="circle-50">
+                                            <img src="assets/imgs/svg-assets/director-chair-director-svgrepo-com.svg" alt="" class="circle-img">
+                                        </div>
+                                    </div>
+                                    <div class="cont ml-20">
+                                        <span class="fz-12 opacity-8">مخرج</span>
+                                        <h6 class="fz-16 main-color">نادين عباس</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div style="display: flex; justify-content: center; margin: auto auto;" class="col-lg-2 pb-20">
-                    <a href="https://www.jotform.com/app/240752196604457"
+                    <a href="https://form.jotform.com/240711154175045"
                     class="butn butn-md butn-bg main-colorbg2 radius-30 fz-26 mt-50">
                     <span>انضم الينا الاَن !</span>
                     </a>
@@ -443,8 +461,8 @@
                     </div>
                 </div>
                 <div style="display: flex; justify-content: center; margin: auto auto;" class="col-lg-2 pt-30 pb-30">
-                    <a href="https://www.jotform.com/app/240752196604457"
-                    class="butn butn-md butn-bg main-colorbg2 radius-30 fz-26 mt-30">
+                    <a href="https://form.jotform.com/240711154175045"
+                    class="butn butn-md butn-bg main-colorbg2 radius-30 fz-26 mt-50">
                     <span>انضم إلينا الاَن !</span>
                     </a>
                 </div>
@@ -605,9 +623,9 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <div class="swiper-controls testim-controls arrow-out d-flex mr-auto">
+                            <div class="swiper-controls testim-controls arrow-out d-flex mr-auto" style="height: 30px;">
                                 <div class="swiper-button-prev">
-                                    <span class="right">
+                                    <span class="left">
                                         <svg width="20" class="mb-5"  height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -616,8 +634,8 @@
                                         </svg>
                                     </span>
                                 </div>
-                                <div class="swiper-button-next mr-50">
-                                    <span class="left">
+                                <div class="swiper-button-next mr-20">
+                                    <span class="right">
                                         <svg width="20"  class="mb-10" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -646,7 +664,7 @@
                                 </h4>
                             </div>
                             <div class="mr-auto" style="margin-right: 50px;">
-                                <a href="https://www.jotform.com/app/240752196604457" class="butn-circle d-flex align-items-center text-center m-auto">
+                                <a href="https://form.jotform.com/240711154175045" class="butn-circle d-flex align-items-center text-center m-auto">
                                     <div class="full-width">
                                         <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -667,7 +685,6 @@
         </section>
 
     </main>
-
 
 
     <!-- ==================== Start Footer ==================== -->
@@ -718,7 +735,7 @@
                             <a href="#impact">التعلم</a>
                         </li>
                         <li class="main-color underline">
-                            <a href="#impact">سياسة الخصوصية</a>
+                            <a href="https://docs.google.com/document/d/1bMCP5zdWjIRZfr5tERXniYeQwey_zIgLe2qS2wA46MQ/edit">سياسة الخصوصية</a>
                         </li>
                         <li class="fz-12">
                             <a >info@fazzaa.com</a>
@@ -729,17 +746,16 @@
                     <div class="tit mb-20">
                         <h6>تواصل مع فزعة عبر منصاتنا الاجتماعية للبقاء على تواصل معنا ومعرفة جميع اخبارنا.</h6>
                     </div>
-                    <div class="subscribe" style="display: flex; justify-content: space-between; max-width: 200px;">
+                    <div class="subscribe" style="display: flex; gap:25px; max-width: 200px;">
                         <a class="icon-img-40">
                             <img src="assets/imgs/svg-assets/linkedin-svgrepo-com.svg" alt="">
                         </a>
-                        <a class="icon-img-40">
+                        <a class="icon-img-40 mb-1">
                             <img src="assets/imgs/svg-assets/facebook-rounded-border-svgrepo-com (1).svg" alt="">
                         </a>
-                        <a class="icon-img-40">
+                        <!-- <a class="icon-img-40">
                             <img src="assets/imgs/svg-assets/website-click-svgrepo-com.svg" alt="">
-                        </a>
-
+                        </a> -->
                     </div>
                 </div>
             </div>

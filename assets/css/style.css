@@ -368,6 +368,46 @@ img {
 .butn.butn-md {
   padding: 15px 36px;
 }
+.hero-butn{
+  font-size: 28px;
+  margin-top: 50px;
+  margin-right: 110px;
+}
+@media screen and (max-width:1450px) {
+  .butn.butn-md{
+    padding: 10px 10px;  
+  }
+}
+@media only screen and (max-width:650px) {
+  .butn.butn-md{
+    margin-left: 10px;
+    padding: 10px 10px;    
+    width: 100%;
+    margin: auto auto;
+    font-size: 20px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-butn{
+    margin-top: 30;
+    width: auto;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width:450px) {
+  .butn.butn-md{
+    font-size: 17px !important;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width:330px) {
+  .butn.butn-md{
+    font-size: 15px !important;
+  }
+}
+
 
 .butn.butn-full {
   width: 100%;
@@ -1594,6 +1634,10 @@ img.left {
 
 .icon-img-30 {
   width: 30px;
+}
+
+.icon-img-35 {
+  width: 36px;
 }
 
 .icon-img-40 {
@@ -6925,7 +6969,10 @@ footer .bg-pattern {
 .showcase-full .swiper-button-prev:after {
   display: none;
 }
-
+.swiper-button-prev, .swiper-button-next {
+  transform: scaleX(-1);
+  padding-inline-end: 50px;
+}
 .parallax-show .inner {
   min-height: 100vh;
 }
@@ -8586,6 +8633,17 @@ header.in-box {
   overflow: visible;
 }
 
+@media (max-width:1300px) {
+  .testim-crv2{
+    font-size:medium;
+    margin: auto auto;
+  }
+}
+@media (max-width:600px) and (min-width:200px) {
+  .testim-crv2{
+    font-size:small
+  }
+}
 .testim-corp .main-img {
   margin-top: 80px;
   position: relative;
@@ -9277,8 +9335,23 @@ header.in-box {
 .card-container{
   padding: 0 50px;
   min-height: 47vh;
+  /* height: 550vh; */
 }
 
+.join-butn{
+
+}
+#slide1:checked ~ #carousel .item:nth-child(1),
+#slide2:checked ~ #carousel .item:nth-child(2),
+#slide3:checked ~ #carousel .item:nth-child(3) {
+    /* Styles to show the item */
+}
+
+@media screen and (max-width:991px) {
+  .extra-img{
+margin-top: 40px;
+  }
+}
 @media (max-width:1500px){
   .numbers-section{
     display: grid;
@@ -9287,12 +9360,26 @@ header.in-box {
     font-size: medium;
     padding: auto auto;
     margin: 0 auto;
+    padding-left: 90px;
   }
   .numbers-section div{
   margin: auto auto;
   }
 }
 
+@media (max-width:500px)and(min-width:200px){
+  .numbers-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    font-weight: 200;
+    font-size: small;
+    padding: auto auto;
+    margin: 0 auto;
+  }
+  .numbers-section div div{
+  margin: auto auto;
+  }
+}
 .img {
   position: relative;
   overflow: hidden;
@@ -9355,18 +9442,30 @@ header.in-box {
   .card-container{
    display: grid;
    gap:10px;
-   height: 80vh;
+   height: 84vh;
    grid-template-columns: repeat(2, 1fr);
    width: auto;
    /* height: 100%; */
   }
 }
 
-@media (min-width: 200px) and (max-width: 740px){
+@media (min-width: 350px) and (max-width: 740px){
   .card-container{
    display: grid;
    gap:10px;
-   height: 180vh;
+   height: 195vh;
+   width: auto;
+   margin: 0 50px;
+   /* grid-template-columns: repeat(2, 1fr); */
+   /* height: 100%; */
+  }
+}
+
+@media (min-width: 200px) and (max-width: 350px){
+  .card-container{
+   display: grid;
+   gap:10px;
+   height: 300vh;
    width: auto;
    margin: 0 50px;
    /* grid-template-columns: repeat(2, 1fr); */
@@ -9374,10 +9473,6 @@ header.in-box {
   }
 }
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  .shop-cart {
-    /* Force table to not be like tables anymore */
-    /* Hide table headers (but not display: none;, for accessibility) */
-  }
   .shop-cart table {
     width: 100%;
   }
