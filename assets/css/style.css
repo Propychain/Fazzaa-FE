@@ -250,7 +250,7 @@ figure {
 }
 
 .main-color {
-  color: #429ce6 !important;
+  color: #101c2c !important;
 }
 
 .main-colorbg {
@@ -262,7 +262,7 @@ figure {
 }
 
 .main-colorbg2 {
-  background-color: #429ce6;
+  background-color: #101c2c;
 }
 
 .main-color3 {
@@ -399,10 +399,16 @@ img {
   transition: all .4s;
   color: white !important;
 }
-
+.btn3{
+  display: inline-block;
+}
+.btn3:hover{
+  background-color: #101c2c;
+  color: white !important;
+}
 .butn.butn-bg:hover {
   background: transparent !important;
-  border-color: #429ce6;
+  border-color: #101c2c;
   color: black !important;
 }
 
@@ -422,7 +428,7 @@ img {
 }
 
 .butn-circle:hover span {
-  color: #000;
+  color: #fff;
 }
 
 .butn-circle:hover:after {
@@ -443,7 +449,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #429ce6;
+  background: #101c2c;
   color: white;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
@@ -461,7 +467,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 1px solid #429ce6;
+  border: 1px solid #101c2c;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
@@ -1273,7 +1279,7 @@ img {
 
 .stroke {
   color: transparent;
-  -webkit-text-stroke: 1px #429ce6;
+  -webkit-text-stroke: 1px #101c2c;
 }
 
 .dark-text .stroke,
@@ -8043,7 +8049,7 @@ header.in-box {
   position: relative;
   padding: 3px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #429ce6;
+  background-color: #101c2c;
 
 }
 
@@ -8514,7 +8520,7 @@ header.in-box {
 }
 
 .testim-crv2 .bord-qoute {
-  border: 1px solid #429ce6;
+  border: 1px solid #101c2c;
 }
 
 .testim-crv2 .bord-qoute .qoute-icon {
@@ -8618,7 +8624,7 @@ header.in-box {
 .swiper-controls.arrow-out .swiper-button-prev:hover .right,
 .swiper-controls.arrow-out .swiper-button-next:hover .left,
 .swiper-controls.arrow-out .swiper-button-next:hover .right {
-  background: #429ce6;
+  background: #101c2c;
   color: white;
 }
 
@@ -8628,7 +8634,7 @@ header.in-box {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  border: 1px solid #429ce6;
+  border: 1px solid #101c2c;
   border-radius: 50%;
   color: #1d1d1d;
 }
